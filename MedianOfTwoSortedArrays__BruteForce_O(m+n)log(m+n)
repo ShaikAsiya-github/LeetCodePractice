@@ -1,0 +1,9 @@
+def median_sorted_arrays(a1,a2):
+  res=sorted(a1+a2)
+  n=len(res)
+  if n%2!=0:
+    return res[n//2]
+  return (res[n//2-1]+res[n//2])
+print("Concates and Sorts entire array")
+a1=list(map(int,input("Enter arr1 elements:").split(',')))
+a2=list(map(int,input("Enter arr2 elements:").split(',')))
