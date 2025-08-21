@@ -9,6 +9,7 @@ def two_sum(arr,target):
         ''' if wants multiple such sum pairs then,
         print(f'{[i,j]}')
         break
+print("Works for unsorted array too")
 arr=list(map(int,input("Enter array elements").split(',')))
 target=int(input("Enter target sum:"))
 ans=two_sum(arr,target)
