@@ -1,0 +1,15 @@
+def two_sum(arr,target):
+  res=0
+  n=len(arr)
+  for i in range(n):
+    for j in range(i+1,n):
+      res=arr[i]+arr[j]
+      if res==target:
+        return [i+j]
+        ''' if wants multiple such sum pairs then,
+        print(f'{[i,j]}')
+        break
+arr=list(map(int,input("Enter array elements").split(',')))
+target=int(input("Enter target sum:"))
+ans=two_sum(arr,target)
+print(ans)
