@@ -1,0 +1,13 @@
+def two_sum(arr,target):
+  seen={}
+  for i,num in enumerate(arr):
+    complement=target-num
+    if complement in seen:
+      return [seen[complement],i]
+    return seen[num]=i
+print("Works for unsorted array too")
+arr=list(map(int,input("Enter array elements:").split(',')))
+target=int(input("Enter target sum:"))
+res=two_sum(arr,target)
+print(res)
+  
